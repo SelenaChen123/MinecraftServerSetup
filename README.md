@@ -1,2 +1,2 @@
-# MinecraftBackups
-Backs up an Oracle Cloud Minecraft server
+# MinecraftServerSetup
+Sets up a Minecraft server in Oracle Cloud

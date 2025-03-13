@@ -1,0 +1,12 @@
+[Unit]
+Description=Minecraft Server
+After=network.target
+
+[Service]
+User=opc
+WorkingDirectory=/home/opc
+ExecStart=bash /home/opc/start_minecraft.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
