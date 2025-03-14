@@ -1,5 +1,5 @@
 # Create Server
-Steps to create a Minecraft server in Oracle Cloud: https://jangro.com/2024/05/31/how-set-up-a-free-vanilla-minecraft-server-in-2024/
+Steps to create a Minecraft server in Oracle Cloud
 
 ## 1. Create an Oracle Cloud Instance
 
