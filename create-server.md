@@ -130,10 +130,7 @@ Steps to create a Minecraft server in Oracle Cloud
     java -Xmx1024M -Xms1024M -jar server.jar nogui
     ```
 
-16. Wait for the Minecraft `.jar` file run to print:
-    ```
-    Failed to load eula.txt
-    ```
+16. Wait for the Minecraft `.jar` file run to print `Failed to load eula.txt`
 
 17. Accept the End User License Agreement:
     ```
