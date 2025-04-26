@@ -108,14 +108,32 @@ Steps to allow commands/cheats
     sudo systemctl status /etc/systemd/system/minecraft.service
     ```
 
-19. Open the `ops.json` file:
+19. Find the process ID of the running Minecraft server:
+    ```
+    ps -A | grep java
+    ```
+
+20. Copy the number at the very start of the output of step 19
+
+21. Stop the Minecraft server:
+    ```
+    kill <pid>
+    ```
+    - *pid*: copied process ID number of the running Minecraft server
+
+22. Check the status of the `minecraft.service` service:
+    ```
+    sudo systemctl status /etc/systemd/system/minecraft.service
+    ```
+
+23. Open the `ops.json` file:
     ```
     vi ops.json
     ```
 
-20. Type `i`
+24. Type `i`
 
-21. Paste the following:
+25. Paste the following:
     ```
     [
         {
@@ -127,40 +145,40 @@ Steps to allow commands/cheats
     ]
     ```
 
-22. Press the `Esc` key on your keyboard
+26. Press the `Esc` key on your keyboard
 
-23. Type `:wq`
+27. Type `:wq`
 
-24. Press the `Enter` key on your keyboard
+28. Press the `Enter` key on your keyboard
 
-25. Open the `usercache.json` file:
+29. Open the `usercache.json` file:
     ```
     cat usercache.json
     ```
 
-26. Find your username next to one of the `name` fields in the `usercache.json` file and copy the `uuid` value next to your username
+30. Find your username next to one of the `name` fields in the `usercache.json` file and copy the `uuid` value next to your username
 
-27. Open the `ops.json` file again:
+31. Open the `ops.json` file again:
     ```
     vi ops.json
     ```
 
-28. Type `i`
+32. Type `i`
 
-29. Replace `<uuid>` in the `ops.json` file with the uuid copied from the `usercache.json` file
+33. Replace `<uuid>` in the `ops.json` file with the copied uuid from the `usercache.json` file
 
-30. Replace `<username>` in the `ops.json` file with your username
+34. Replace `<username>` in the `ops.json` file with your username
 
-31. Press the `Esc` key on your keyboard
+35. Press the `Esc` key on your keyboard
 
-32. Type `:wq`
+36. Type `:wq`
 
-33. Start the `minecraft.service` service:
+37. Start the `minecraft.service` service:
     ```
     sudo systemctl start /etc/systemd/system/minecraft.service
     ```
 
-34. Check the status of the `minecraft.service` service:
+38. Check the status of the `minecraft.service` service:
     ```
     sudo systemctl status /etc/systemd/system/minecraft.service
     ```

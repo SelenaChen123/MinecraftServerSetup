@@ -39,4 +39,4 @@ Steps to delete player data
     ```
     rm world/playerdata/<uuid>.dat; rm world/playerdata/<uuid>.dat_old
     ```
-    - *uuid*: the uuid copied from the `usercache.json` file
+    - *uuid*: copied uuid from the `usercache.json` file
