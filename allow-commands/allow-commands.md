@@ -72,8 +72,6 @@ Steps to allow commands/cheats
     cd ~
     ```
 
-13. Copy your 
-
 13. Download the latest NBTExplorer `.tar` file into the Oracle Cloud server:
     ```
     wget <NBTEXPLORER_TAR>
@@ -92,7 +90,7 @@ Steps to allow commands/cheats
     ```
     - *NBTEXPLORER_FOLDER*: name of the folder that was unpacked from the NBTExplorer `.tar` file
 
-16. Check the Minecraft level data:
+16. Check the Minecraft level data file:
     ```
     mono <NBTEXPLORER_FOLDER>/NBTUtil/NBTUtil.exe --path world/level.dat --printtree
     - *NBTEXPLORER_FOLDER*: name of the folder that was unpacked from the NBTExplorer `.tar` file
@@ -173,12 +171,18 @@ Steps to allow commands/cheats
 
 36. Type `:wq`
 
-37. Start the `minecraft.service` service:
+37. Allow commands through the Minecraft level data file:
+    ```
+    mono <NBTEXPLORER_FOLDER>/NBTUtil/NBTUtil.exe --path world/level.dat/Data/allowCommands --setvalue 1
+    - *NBTEXPLORER_FOLDER*: name of the folder that was unpacked from the NBTExplorer `.tar` file
+    ```
+
+38. Start the `minecraft.service` service:
     ```
     sudo systemctl start /etc/systemd/system/minecraft.service
     ```
 
-38. Check the status of the `minecraft.service` service:
+39. Check the status of the `minecraft.service` service:
     ```
     sudo systemctl status /etc/systemd/system/minecraft.service
     ```
