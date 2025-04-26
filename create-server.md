@@ -1,4 +1,5 @@
 # Create Server
+
 Steps to create a Minecraft server in Oracle Cloud
 
 ## 1. Create an Oracle Cloud Instance
