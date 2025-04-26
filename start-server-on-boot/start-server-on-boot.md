@@ -46,15 +46,15 @@ Complete all the steps in the [Create Server](../create-server.md#create-server)
 
 7. Enable the `minecraft.service` service:
     ```
-    systemctl enable /etc/systemd/system/minecraft.service
+    sudo systemctl enable minecraft.service
     ```
 
 8. Start the `minecraft.service` service:
     ```
-    sudo systemctl start /etc/systemd/system/minecraft.service
+    sudo systemctl start minecraft.service
     ```
 
 9. Check the status of the `minecraft.service` service:
     ```
-    sudo systemctl status /etc/systemd/system/minecraft.service
+    sudo systemctl status minecraft.service
     ```

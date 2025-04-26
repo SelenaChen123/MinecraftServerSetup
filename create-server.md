@@ -1,6 +1,5 @@
 # Create Server
-
-Steps to create a Minecraft server in Oracle Cloud: https://jangro.com/2024/05/31/how-set-up-a-free-vanilla-minecraft-server-in-2024/
+Steps to create a Minecraft server in Oracle Cloud
 
 ## 1. Create an Oracle Cloud Instance
 
@@ -131,10 +130,7 @@ Steps to create a Minecraft server in Oracle Cloud: https://jangro.com/2024/05/3
     java -Xmx1024M -Xms1024M -jar server.jar nogui
     ```
 
-16. Wait for the Minecraft `.jar` file run to print:
-    ```
-    Failed to load eula.txt
-    ```
+16. Wait for the Minecraft `.jar` file run to print `Failed to load eula.txt`
 
 17. Accept the End User License Agreement:
     ```
