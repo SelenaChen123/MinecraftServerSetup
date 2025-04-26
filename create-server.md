@@ -1,4 +1,5 @@
 # Create Server
+
 Steps to create a Minecraft server in Oracle Cloud: https://jangro.com/2024/05/31/how-set-up-a-free-vanilla-minecraft-server-in-2024/
 
 ## 1. Create an Oracle Cloud Instance
@@ -21,7 +22,7 @@ Steps to create a Minecraft server in Oracle Cloud: https://jangro.com/2024/05/3
 
 9. Click the *Select shape* button
 
-10. Select *Create new virtual cloud network* for the *Primary network* in the *Primar VNIC information* section
+10. Select *Create new virtual cloud network* for the *Primary network* in the *Primary VNIC information* section
 
 11. Click the *Save private key* button in the *Add SSH keys* section
 
@@ -104,7 +105,7 @@ Steps to create a Minecraft server in Oracle Cloud: https://jangro.com/2024/05/3
     yum list jdk*
     ```
 
-10. Install the most recent headless version:
+10. Install the most recent headless JDK version:
     ```
     sudo yum install <HEADLESS_JDK>
     ```

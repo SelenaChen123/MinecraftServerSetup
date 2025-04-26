@@ -1,4 +1,5 @@
 # Start Server on Boot
+
 Steps to automatically start the Minecraft server when the Oracle Cloud server boots
 
 ### Prerequisites

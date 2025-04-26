@@ -1,4 +1,5 @@
 # Back Up Server
+
 Steps to back up the Minecraft server in the Oracle Cloud server (and optionally locally)
 
 ## Back Up Minecraft Server in the Oracle Cloud Server
