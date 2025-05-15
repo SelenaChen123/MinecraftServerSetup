@@ -4,7 +4,7 @@ Steps to automatically start the Minecraft server when the Oracle Cloud server b
 
 ### Prerequisites
 
-Complete all the steps in the [Create Server](../create-server.md#create-server)  file
+Complete all the steps in the [Create Server](../create-server.md#create-server) file
 
 ### Steps
 

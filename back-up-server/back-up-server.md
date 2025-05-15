@@ -6,7 +6,7 @@ Steps to back up the Minecraft server in the Oracle Cloud server (and optionally
 
 ### Prerequisites
 
-Complete all the steps in the [Create Server](../create-server.md#create-server)  file
+Complete all the steps in the [Create Server](../create-server.md#create-server) file
 
 ### Steps
 
