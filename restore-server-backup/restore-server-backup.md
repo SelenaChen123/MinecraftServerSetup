@@ -10,30 +10,35 @@ Steps to restore a server backup
 
 ### Steps
 
-1. Stop the `minecraft.service` service:
+1. Move to the service folder:
     ```
-    sudo systemctl stop /etc/systemd/system/minecraft.service
+    cd /etc/systemd/system
     ```
 
-2. View the list of server backups:
+2. Stop the `minecraft.service` service:
+    ```
+    sudo systemctl stop minecraft.service
+    ```
+
+3. View the list of server backups:
     ```
     ls /home/opc/minecraft_backups
     ```
 
-3. Copy the name of the server backup that you want to restore to.
+4. Copy the name of the server backup that you want to restore to.
 
-4. Create a copy of the server backup that you want to restore to in your home folder:
+5. Create a copy of the server backup that you want to restore to in your home folder:
     ```
     cp /home/opc/minecraft_backups/<SERVER_BACKUP> .
     ```
     - *SERVER_BACKUP*: copied name of the server backup that you want to restore to
 
-5. Delete the server files:
+6. Delete the server files:
     ```
-    rm -r world
+    rm -r ~/world
     ```
 
-6. Move to the root folder:
+7. Move to the root folder:
     ```
     cd /
     ```
@@ -44,12 +49,17 @@ Steps to restore a server backup
     ```
     - *SERVER_BACKUP*: copied name of the server backup that you want to restore to
 
-8. Start the `minecraft.service` service:
+8. Move to the service folder:
     ```
-    sudo systemctl start /etc/systemd/system/minecraft.service
+    cd /etc/systemd/system
     ```
 
-9. Check the status of the `minecraft.service` service:
+9. Start the `minecraft.service` service:
     ```
-    sudo systemctl status /etc/systemd/system/minecraft.service
+    sudo systemctl start minecraft.service
+    ```
+
+10. Check the status of the `minecraft.service` service:
+    ```
+    sudo systemctl status minecraft.service
     ```
