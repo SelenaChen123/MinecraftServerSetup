@@ -69,8 +69,8 @@ Complete all the steps in the [Create Server](../create-server.md#create-server)
 
 5. Create a Windows scheduled task to back up the Minecraft server from the Oracle Cloud server to your local machine daily:
     ```
-    schtasks /create /tn "BackupMinecraft" /tr "<BASH_PATH> -c <BACKUP_SCRIPT>" /sc daily /st <BACKUP_TIME>
+    schtasks /create /tn "BackupMinecraft" /tr "'<BASH_PATH>' <BACKUP_SCRIPT>" /sc daily /st <BACKUP_TIME>
     ```
-    - *BASH_PATH*: path to the `bash.exe` command on your local machine
-    - *BACKUP_SCRIPT*: path to the `start_backup.sh` file on your local machine
+    - *BASH_PATH*: path to the `bash.exe` command on your local machine in *C:\path\to\bash\command* format
+    - *BACKUP_SCRIPT*: path to the `start_backup.sh` file on your local machine in *C:\path\to\backup\script* format
     - *BACKUP_TIME*: time in 24-hour *HH:MM* format to back up the Minecraft server to your local machine daily
